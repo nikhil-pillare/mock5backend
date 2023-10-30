@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const doctorShchema = new mongoose.Schema({
+const DoctorShchema = new mongoose.Schema({
     name:String,
     imageUrl:String,
     specialization:String,
@@ -14,6 +14,6 @@ const doctorShchema = new mongoose.Schema({
 }
 )
 
-const doctorModel= mongoose.model("Doctors", doctorShchema)
+const DoctorModel= mongoose.model("Doctors", DoctorShchema)
 
-module.exports= {doctorModel}
+module.exports= DoctorModel
